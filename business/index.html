@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>测一测你身价值多少钱？</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <!-- Link Swiper's CSS -->
+  <script src="js/flexible.js"></script>
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/progress.css">
+  <link rel="stylesheet" href="css/start.css">
+  <link rel="stylesheet" href="css/question.css">
+  <link rel="stylesheet" href="css/public.css">
+  <link rel="stylesheet" href="css/result.css">
+  <link rel="stylesheet" href="css/userInfo.css">
+  <link rel="stylesheet" href="css/getGift.css">
+  <!-- Demo styles -->
+  <style>
+    html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+<div style="display:none"> 
+        <span>好的生活没那么难，只是你没找对机会</span>
+        <img src="img/progress/kb.jpg" alt="">
+</div>
+  <!-- Swiper -->
+  <div class="swiper-container ">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide  stop-swiping">
+         <div class="container">
+              <div class="progress-bg">
+                  <div class="progress">
+                      <div class="progress-icon"></div>
+                      <div class="progress2"></div>
+                      <div class="progressText"></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="swiper-slide  stop-swiping">
+          <div class="container">
+              <div class="start-bg">
+                  <div class="money">
+                  </div>
+                  <div class="pt">
+                      <img src="img/start/logo.png" alt="logo" class="logo">
+                      <div class="start1_bg">
+                          <div class="sjbx">
+                              <img src="img/start/sj.png" alt="" class="sj">
+                              <img src="img/start/b.png" alt="" class="b">
+                              <img src="img/start/x.png" alt="" class="x">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="howMoney_content">
+                      <img src="img/start/howMoney.png" alt="" class="howMoney">
+                      <img src="img/start/start_button.png" class="start_button">
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="swiper-slide stop-swiping">
+          <div class="container">
+              <div class="q1_bg">
+                  <div class="question_progress">
+                      <div class="question_title">
+                          <img src="img/question1/Q1..png" alt="" class="Q1">
+                          <img src="img//question1/text.png" alt="" class="text">
+                      </div>
+                      <div class="question_content">
+                          <div class="answer answer1a answer1" data-score="5">
+                              <img src="img/question1/a.png" alt="">
+                          </div>
+                          <div class="answer answer1b answer1" data-score="5">
+                              <img src="img/question1/b.png" alt="">
+                          </div>
+                          <div class="answer answer1c answer1" data-score="10">
+                              <img src="img/question1/c.png" alt="">
+                          </div>
+                          <div class="answer answer1d answer1" data-score="1">
+                              <img src="img/question1/d.png" alt="">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="swiper-slide stop-swiping">
+          <div class="container">
+              <div class="q2_bg">
+                  <div class="question_progress">
+                      <div class="question_title">
+                          <img src="img/question2/Q2..png" alt="" class="Q1">
+                          <img src="img//question2/text.png" alt="" class="text2">
+                      </div>
+                      <div class="question_content" >
+                        <div class="answer answer2 answer2a"  data-score="1">
+                            <img src="img/question2/a.png" >
+                        </div>
+                          <div class="answer answer2 answer2b" data-score="10">
+                              <img src="img/question2/b.png" >
+                          </div>
+                          <div class="answer answer2 answer2c" data-score="0">
+                              <img src="img/question2/c.png" >
+                          </div>
+                          <div class="answer answer2 answer2d" data-score="8">
+                              <img src="img/question2/d.png" >
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="swiper-slide stop-swiping">
+          <div class="container">
+              <div class="q3_bg">
+                  <div class="question_progress">
+                      <div class="question_title">
+                          <img src="img/question3/Q3..png" alt="" class="Q1">
+                          <img src="img//question3/text.png" alt="" class="text">
+                      </div>
+                      <div class="question_content">
+                          <div class="answer answer3 answer3a" data-score="10">
+                              <img src="img/question3/a.png" alt="">
+                          </div>
+                          <div class="answer answer3 answer3b" data-score="8">
+                              <img src="img/question3/b.png" alt="">
+                          </div>
+                          <div class="answer answer3 answer3c" data-score="5">
+                              <img src="img/question3/c.png" alt="">
+                          </div>
+                          <div class="answer answer3 answer3d" data-score="0">
+                              <img src="img/question3/d.png" alt="">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="swiper-slide stop-swiping">
+          <div class="container">
+              <div class="q4_bg">
+                  <div class="question_progress">
+                      <div class="question_title">
+                          <img src="img/question4/Q4..png" alt="" class="Q1">
+                          <img src="img//question4/text.png" alt="" class="text2">
+                      </div>
+                      <div class="question_content" >
+                          <div class="answerA answer4a answer4 " data-score="5">
+                              <img src="img/question4/a.png" alt="">
+                          </div>
+                          <div class="answerB answer4b answer4" data-score="8">
+                              <img src="img/question4/b.png" alt="">
+                          </div>
+                          <div class="answerB answer4c answer4" data-score="10">
+                              <img src="img/question4/c.png" alt="">
+                          </div>
+                          <div class="answerA answer4d answer4" data-score="0">
+                              <img src="img/question4/d.png" alt="">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="swiper-slide stop-swiping">
+        <div class="container">
+          <div class="q5_bg">
+              <div class="question_progress">
+                  <div class="question_title">
+                      <img src="img/question5/Q5..png" alt="" class="Q1">
+                      <img src="img//question5/text.png" alt="" class="text2">
+                  </div>
+                  <div class="question_content5">
+                      <div class="answer answer5a answer5" data-score="0">
+                          <img src="img/question5/a.png" alt="">
+                      </div>
+                      <div class="answer answer5b answer5" data-score="10">
+                          <img src="img/question5/b.png" alt="">
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="progress-bg progress2-bg">
+                <div class="progress">
+                    <img src="img/progress/progress-icon.png" alt="金币" class="progress-icon2">
+                    <div class="progress3"></div>
+                    <div class="progressText2"></div>
+                </div>
+        </div>
+         </div>
+      </div>
+      <div class="swiper-slide stop-swiping">
+          <div class="container">
+                
+                  <img src="img/result/100.jpg" alt="" style="display: none;">
+                  <img src="img/result/300.jpg" alt="" style="display: none;">
+                  <img src="img/result/500.jpg" alt="" style="display: none;">
+                  <img src="img/result/great.jpg" alt="" style="display: none;">
+                  <img src="" alt="" class="result-bg">
+                  <div id="model">
+                      <div class="model_bg"></div>
+                      <div class="share"></div>
+                  </div>
+                  <div class="money_1"></div>
+                  <div>
+                      <div class="button"> 
+                            <div id="sjbx" ></div>
+                            <div id="share" ></div>
+                            <div class="tip">长按保存并发至朋友圈</div> 
+                      </div>
+                  </div>
+                  <div class="money_2"></div>
+                  
+          </div>
+      </div>
+      <div class="swiper-slide stop-swiping">
+          <div class="container"> 
+              <div class="userInfo-bg">
+                  <div id="model2">
+                      <div class="model_bg"></div>
+                      <div class="share"></div>
+                  </div>
+                  <div class="info">
+                      <div>  
+                          <div class="nameInput">
+                              <div class="input_money1"></div>
+                              <input type="text" name="" id="name" maxlength="11" >
+                              <div class="Error" >
+                                <span id="nameError"> 请输入正确的姓名</span> 
+                                <span id="nameNone"> 请输入姓名</span> 
+                              </div>
+                          </div>
+                          <div class="telInput">
+                                <div class="input_money2"></div>
+                                <input type="text" name="" id="tel" maxlength="11">
+                              <div class="Error">
+                                 <span  id="telError">请输入正确的手机号码</span> 
+                                 <span id="telNone"> 请输入手机号码</span> 
+                              </div>
+                          </div>
+                      </div>
+                      <div>
+                          <div class="user_button">
+                              <img src="img/input/callUs.png" alt="" class="callUs">
+                              <div id="input_sjbx"></div>
+                              <div id="input_share"></div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="swiper-slide stop-swiping">
+        <div class="container">
+            <div class="gift-bg">
+                <div id="model3">
+                    <div class="model_bg"></div>
+                    <div class="share"></div>
+                </div>
+                <div id="model4">
+                  <div class="model_bg"></div>
+                  <div class="dy_text">恭喜您，获得1000元抵用券，请长按保存</div>
+                  <div class="quan">
+                      <canvas id="myCanvas" width="320" height="180"></canvas>
+                      <img src="" id="ig">
+                  </div>
+                  <div class="close"></div>
+                 </div>
+                 
+                <div class="zf"></div>
+                <div class="pk">
+                      <div class="pk_bg">
+                          <img src="img/get/pk_button.png" alt="" class="pk_button">
+                      </div>
+                      <div>
+                        <img src="img/get/code.png" alt="" class="code_bg">    
+                      </div>
+                  </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-button-prev" style="display: none"></div>
+    <div class="swiper-button-next" style="display: none"></div>
+  </div>
+   <div style="display:none" > 
+       <span>好的生活没那么难，只是你没找对机会</span>
+       <img src="img/progress/kb.jpg" alt="">
+   </div>
+  <!-- Swiper JS -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/hidpi-canvas.min.js"></script>
+  <script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+  <script>
+    //   轮播图
+    var swiper = new Swiper('.swiper-container', {
+      direction: 'vertical',
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      allowSwipeToPrev : true,
+      noSwiping : true,
+      noSwipingClass : 'stop-swiping',
+      speed:1000,
+    //   initialSlide :9,
+    });
+    var q_score = null;
+    // 缓冲液
+    wait()
+    setTimeout(next,1800)
+    
+    // 开始测试按钮
+     $(".start_button").click(function(){
+        next()
+    });
+    // 测试按钮
+    $('.answer1').click(function(){
+        next()
+    })
+    $('.answer2').click(function(){
+        next()
+    })
+    $('.answer3').click(function(){
+        next()
+    })
+    $('.answer4').click(function(){
+        next()
+    })
+    // 问题五
+    $('.answer5').click(function(){
+        setTimeout(next,1000)
+    })
+    // 第一个缓冲页
+    function wait(){
+        $(".progress2").animate({width:"7.946666666666666rem"},2000);
+        $(".progress-icon").animate({left: '6.933333333333334rem'},2000);
+    }
+    // 下一页
+    function next(){
+        $(".swiper-button-next").click()
+    } 
+    $(function(){
+        choose($(".answer1"),'q1')
+        choose($(".answer2"),'q2')
+        choose($(".answer3"),'q3')
+        choose($(".answer4"),'q4')
+        chooseQ4($(".answerA"),'question1')
+        chooseQ4($(".answerB"),'question4')
+        choose($(".answer5"),'q5')
+        share($("#share"),$("#model"))
+        share($("#input_share"),$("#model2"))
+        share($(".pk_button"),$("#model3"))
+        close($("#model"))
+        close($("#model2"))
+        close($("#model3"))
+        close($("model4"))
+    })
+    //选择问题
+    function choose(document,q){
+        document.each(function(i){
+        document.click(function(){
+        $('.icon_money').css('display','none')
+        $(this).prepend($("<span class='icon_money'></span>"));
+        document.eq(i).css('background-image', 'url("img/question1/no.png")') 
+        $(this).css('background-image', 'url("img/question1/active.png")')
+        s = $(this).attr('data-score')
+        q_score = parseFloat(s)
+        sessionStorage.setItem(q, q_score)
+      });
+    })
+    }
+    // 选择问题4特殊处理
+    function chooseQ4(document,q){
+        document.each(function(i){
+            document.click(function(){
+            document.eq(i).css('background-image', 'url("img/question1/no.png")') 
+            document.eq(i).css('background-image', 'url("img/question1/no.png")') 
+            $(this).css('background-image', 'url("img/'+q+'/active.png")')
+            });
+        })
+    }
+    function dis(){
+        $(".progress2-bg").css('display','block');
+    }
+    // 选择问题5特殊处理
+    $(".answer5").each(function(i){
+      $(".answer5").click(function(){
+          $(".progress3").animate({width:"7.946666666666666rem"},800);
+          $(".progress-icon2").animate({left: '6.933333333333334rem'},800);
+          $(".money_1").animate({top:"30.946666666666666rem"},7000);
+          $(".money_2").animate({bottom:"-9.946666666666666rem"},7000);
+          setTimeout(dis,100)
+          setTimeout(score,100)
+        });
+     })
+     
+     // 计算结果
+     function score(){
+        var score = null
+        score = parseInt(sessionStorage.getItem('q1')) + parseInt(sessionStorage.getItem('q2'))
+            + parseInt(sessionStorage.getItem('q3')) + parseInt(sessionStorage.getItem('q4')) + parseInt(sessionStorage.getItem('q5'))
+        if (score > 5 && score < 21) {
+            $('.result-bg').attr('src', 'img/result/300.jpg')
+            $('.userInfo-bg').css('background-image', 'url("img/input/300.png")')
+        } else if (score > 20 && score < 36) {
+            $('.result-bg').attr('src', 'img/result/500.jpg')
+            $('.userInfo-bg').css('background-image', 'url("img/input/500.png")')
+        } else if (score > 35 && score < 51) {
+            $('.result-bg').attr('src', 'img/result/great.jpg')
+            $('.userInfo-bg').css('background-image', 'url("img/input/greatInput.png")')
+        } else {
+            $('.result-bg').attr('src', 'img/result/100.jpg')
+            $('.userInfo-bg').css('background-image', 'url("img/input/100.png")')
+        }
+    }
+     //身价变现
+     $("#sjbx").click(function(){
+        next()
+    });
+    function isWeiXin(){
+
+        var u = navigator.userAgent; 
+        var ua = navigator.userAgent.toLowerCase(); 
+        if(ua.match(/MicroMessenger/i)=='micromessenger') { 
+            return true
+        }else if(ua.match(/QQ/i) == 'qq'){ 
+            return true
+        }
+        return false
+     }
+    // 分享 
+    function share(document,model){
+        document.click(function(){
+        if(isWeiXin()){
+            model.css('display', 'block')
+        }else{
+          alert('请前往微信或者QQ分享')
+       }
+    });
+    }
+    // 获取随机数
+    var serial=""; 
+    for(var i=0;i<6;i++) 
+    { 
+       serial+=Math.floor(Math.random()*10); 
+    } 
+    // 不同环境不同接口
+    var host = window.location.href;
+    if(host.indexOf('dadaodata') != -1){
+        var apiUrl = 'http://api.dadaodata.com';
+    }else if(host.indexOf('dadaozx') != -1){
+        var apiUrl = 'http://api.dadaozx.com';
+    }else if(host.indexOf('zgxyzx') != -1){
+        var apiUrl = 'http://api.zgxyzx.net';
+    }else{
+        var apiUrl = 'http://api.test.com';
+    } 
+   
+    // 获取用户信息
+    $("#input_sjbx").click(function(){
+    var name = $('#name').val();
+    var tel = $('#tel').val();
+    var username = /[\u4e00-\u9fa5_a-zA-Z0-9_]{2,10}/;
+    var regex = /^1(3|4|5|7|8)\d{9}$/; 
+    var regName = null;
+    var regPhone = null;
+        if(name){
+            $('#nameNone').css('display','none')
+            if(!username.test(name)){
+                $('#nameError').fadeIn()
+            }else{
+                $('#nameError').css('display','none')
+                regName +=1
+            }
+        }else{
+            $('#nameNone').fadeIn()
+            $('#nameError').css('display','none')
+        }
+
+        if(tel){
+            $('#telNone').css('display','none')
+            if(!regex.test(tel)){
+                $('#telError').fadeIn()
+            }else{
+                regPhone +=1
+                $('#telError').fadeOut()
+            }
+        }else{
+            $('#telNone').fadeIn()
+            $('#telError').css('display','none')
+        }
+        
+        if(regName&&regPhone){
+           
+            $.ajax({
+            type: "POST",
+            dataType:'jsonp',
+            url:  apiUrl + "/ddzx/api/temptopic.TemptopicManage/addInfo",
+            data: {name:name,phone:tel,code:serial},
+            success: function(res){
+                if(res.code==1){
+                    next()
+                    $('#model4').css('display', 'block')
+                }else{
+                    alert('该手机已领取礼物')
+                }
+            },
+            error:function(res){
+                alert("网络无连接，似乎断网了");
+            }
+         });
+        }
+    })
+    // 微信原生接口
+    $(function(){
+          $.ajax({
+                 type: "GET",
+                 dataType:'jsonp',
+                 url: apiUrl + "/service/api/WeChatBase/getSignPackage",
+                 success: function(data){ 
+                      if (data != null) {  
+                          wx.config({  
+                              debug: false,  
+                              appId: data.data.appId,  
+                              timestamp: data.data.timestamp,  
+                              nonceStr: data.data.nonceStr,  
+                              signature: data.data.signature,  
+                              jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage','onMenuShareQQ']  
+                      });  
+                      }  
+                 },
+                 error: function(){
+                    alert('wx错了')
+                 }
+              });
+      });
+      
+      wx.ready(function () {
+        wx.onMenuShareTimeline({
+            title: '测一测你的身价值多少钱？', // 分享标题
+            desc: '好的生活没那么难，只是你没找对机会。', // 分享描述
+            link: window.location.href, // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+            imgUrl: 'http://act.dadaodata.com/img/progress/kb.jpg', // 分享图标
+            success: function () {
+            // 用户点击了分享后执行的回调函数
+                alert('分享成功')
+            }
+        });
+        wx.onMenuShareAppMessage({
+            title: '测一测你的身价值多少钱？', // 分享标题
+            desc: '好的生活没那么难，只是你没找对机会。', // 分享描述
+            link: window.location.href, // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+            imgUrl: 'http://act.dadaodata.com/img/progress/kb.jpg', // 分享图标
+            success: function () {
+                alert('分享成功')
+            }
+        });
+        wx.onMenuShareQQ({
+            title: '测一测你的身价值多少钱？', // 分享标题
+            desc: '好的生活没那么难，只是你没找对机会。', // 分享描述
+            link: window.location.href, // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+            imgUrl: 'http://act.dadaodata.com/img/progress/kb.jpg', // 分享图标
+            success: function () {
+                alert('分享成功')
+            },
+            cancel: function () {
+                alert('分享失败')
+            }
+         });
+      });
+      
+    // 奖券canvans
+    var img = new Image()
+    img.src = "img/get/quan.png";
+    tempSrc = "";
+    img.onload =function(){
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+     // polyfill 提供了这个方法用来获取设备的 pixel ratio  
+    var getPixelRatio = function(context) {  
+        var backingStore = context.backingStorePixelRatio ||  
+            context.webkitBackingStorePixelRatio ||  
+            context.mozBackingStorePixelRatio ||  
+            context.msBackingStorePixelRatio ||  
+            context.oBackingStorePixelRatio ||  
+            context.backingStorePixelRatio || 1;  
+        return (window.devicePixelRatio || 1) / backingStore;  
+    };  
+  
+    var ratio = getPixelRatio(ctx); 
+    ctx.drawImage(img,0,0,320* ratio,180* ratio);
+    $(window).resize(resizeCanvas);  
+    function resizeCanvas() {  
+        myCanvas.attr("width", $(window).get(0).innerWidth);  
+        myCanvas.attr("height", $(window).get(0).innerHeight);  
+    };
+    ctx.font="20px serif";
+    ctx.fillStyle = '#FFFFFF';
+    ctx.fillText(serial,15,150);
+    var tempSrc = c.toDataURL("image/png");
+    c.style.display="none";
+    var imgShow = document.getElementById('ig');
+    imgShow.setAttribute('src', tempSrc);
+   };
+ 
+
+   // 关闭奖券弹出框
+    function close(model){
+        $('.model_bg').click(function(){
+            model.css('display','none')
+      })
+    }
+    $('.close').click(function(){
+        $('#model4').css('display','none')
+    })
+  </script>
+</body>
+</html>

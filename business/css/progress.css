@@ -1,0 +1,103 @@
+.progress-bg{
+    position: relative;
+    background: url('../img/progress/progress.png') no-repeat;
+    background-size:100% 100%;
+    width: 100%;
+    height:100%;
+}
+.progress2-bg{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.progress{
+    width: 7.946666666666666rem;
+    height: 0.4rem;
+    border-radius: 0.8rem;
+    position: absolute;
+    top:calc(50% - 0.2rem);
+    left: 1.0533333333333332rem;
+    background: #FFFFFF;
+}
+.progress2{
+    /* width: 7.946666666666666rem; */
+    height: 0.4rem;
+    border-radius: 0.8rem;
+    position: absolute;
+    top:calc(50% - 0.2rem);
+    left: 0rem;
+    background: #F00909;
+    animation: progressA 2s 1;
+   /* Safari 与 Chrome */
+}
+.progress3{
+    /* width: 7.946666666666666rem; */
+    height: 0.4rem;
+    border-radius: 0.8rem;
+    position: absolute;
+    top:calc(50% - 0.2rem);
+    left: 0rem;
+    background: #F00909;
+   /* Safari 与 Chrome */
+}
+.progress-icon{
+    background: url('../img/progress/progress-icon.png') no-repeat;
+    background-size:100% 100%;
+    width: 1.0666666666666667rem;
+    height: 1.0666666666666667rem;
+    position: absolute;
+    /* left: 6.933333333333334rem; */
+    top: -1.04rem;
+    animation: progressB 2s 1;
+   /* Safari 与 Chrome */
+}
+.progress-icon2{
+    background: url('../img/progress/progress-icon.png') no-repeat;
+    background-size:100% 100%;
+    width: 1.0666666666666667rem;
+    height: 1.0666666666666667rem;
+    position: absolute;
+    /* left: 6.933333333333334rem; */
+    top: -1.04rem;
+   /* Safari 与 Chrome */
+}
+.progressText{
+    width: 2.6rem;
+    height: 0.49333333333333335rem;
+    background: url('../img/progress/sqz.png') no-repeat;
+    background-size:100% 100%;
+    margin-top: 0.6666666666666666rem;
+    margin-left: 2.6rem;
+}
+.progressText2{
+    width: 2.6rem;
+    height: 0.49333333333333335rem;
+    background: url('../img/progress/bxz.png') no-repeat;
+    background-size:100% 100%;
+    margin-top: 0.6666666666666666rem;
+    margin-left: 2.6rem;
+}
+/* @keyframes progressA
+{
+    from {
+        width:0rem;
+    }
+    to {
+         width: 7.946666666666666rem;
+        }
+}
+
+@keyframes progressB
+{
+    from {
+        left:0rem;
+    }
+    to {
+        left:7rem;
+    }
+} */
+
+
+

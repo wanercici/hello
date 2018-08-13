@@ -1,0 +1,85 @@
+.userInfo-bg{
+    position: relative;
+    background: url('../img/input/100.png') no-repeat;
+    background-size:100% 100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.info{
+    position: absolute;
+    bottom: 0.8rem;
+}
+.input_money1{
+    background: url('../img/input/name.png') no-repeat;
+    background-size:100% 100%;
+    width: 7.32rem;
+    height: 1.3066666666666666rem;
+    margin:  0 auto;
+    overflow: hidden;
+}
+.input_money2{
+    background: url('../img/input/tel.png') no-repeat;
+    background-size:100% 100%;
+    width: 7.32rem;
+    height: 1.3066666666666666rem;
+    margin:  0 auto;
+    overflow: hidden;
+   
+}
+.nameInput{
+    position: relative;
+    
+}
+#name{
+    width: 3.5rem;
+    height: 0.7333333333333333rem;
+    position: absolute;
+    top: 0.17333333333333334rem;
+    left: 3.48rem;
+}
+.telInput{
+    position: relative;
+}
+#tel{
+    width: 3.5rem;
+    height: 0.7333333333333333rem;
+    position: absolute;
+    top: 0.17333333333333334rem;
+    left: 3.48rem;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+.user_button{
+    margin-top:0.3333333333333333rem;
+}
+.callUs{
+    width: 6.213333333333333rem;
+    height: 0.49333333333333335rem;
+}
+
+.Error{
+    width: 5.333333333333333rem;
+    height: 0.5rem;
+    margin: 0 auto 0.06666666666666667rem;
+    color: red;
+    font-size: 0.4rem;
+}
+#nameError , #telError , #nameNone , #telNone{
+    display: none;
+}
+#input_sjbx{
+    background: url('../img/input/gift_button.png') no-repeat;
+    background-size:100% 100%;
+    width: 3.986666666666667rem;
+    height: 1.52rem;
+    margin:0rem 0.13333333333333333rem 0 0.13333333333333333rem;
+    display: inline-block;
+}
+#input_share{
+    background: url('../img/input/to_button.png') no-repeat;
+    background-size:100% 100%;
+    width: 3.986666666666667rem;
+    height: 1.52rem;
+    margin:0rem 0.13333333333333333rem 0 0.13333333333333333rem;
+    display: inline-block;
+}

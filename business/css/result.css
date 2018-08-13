@@ -1,0 +1,93 @@
+.result-bg{
+    width: 10rem;
+    height: 100%;
+    overflow: hidden;
+}
+.money_1{
+    position: absolute;
+    background: url('../img/result/money_1.png') no-repeat;
+    background-size:100% 100%;
+    width: 9.893333333333333rem;
+    height: 3.08rem;
+    top: 0rem;
+}
+.money_2{
+    background: url('../img/result/money_2.png') no-repeat;
+    background-size:100% 100%;
+    position: absolute;
+    width: 3.9466666666666668rem;
+    height: 5.626666666666667rem;
+    bottom: 2rem;
+    right: 0;
+}
+.share_button{
+    display: inline-block;
+    margin:0rem 0.13333333333333333rem 0 0.13333333333333333rem;
+}
+
+#sjbx{
+    display: inline-block;
+    background: url('../img/result/bx_button.png') no-repeat;
+    background-size:100% 100%;
+    width: 3.986666666666667rem;
+    height: 1.52rem;
+    margin-top: 1.4333333333333333rem;
+    animation: resultAnimateA 0.8s infinite;
+}
+#share{
+    display: inline-block;
+    background: url('../img/result/share_button.png') no-repeat;
+    background-size:100% 100%;
+    width: 3.986666666666667rem;
+    height: 1.52rem;
+    margin:0rem 0.13333333333333333rem 0 0.13333333333333333rem;
+    animation: resultAnimateB 0.8s infinite;
+}
+
+.button{
+    position: absolute;
+    bottom: 0.4333333333333333rem;
+    left: 0.7333333333333333rem;
+    z-index: 5;
+}
+.tip{
+   color: #FFFFFF;
+   font-size: 14px  !important;   
+   position: absolute;
+   top:2.986667rem;
+   left: 2.373333rem
+}
+
+@-webkit-keyframes resultAnimateA{
+    from {
+        transform: translateZ(0rem) scale(1);
+   }
+    to {
+        transform: translateZ(1rem) scale(0.9);
+   }
+}
+@keyframes resultAnimateA {
+    from {
+        transform: translateZ(0) scale(1);
+   }
+    to {
+        transform: translateZ(1rem) scale(0.9);
+   }
+}
+@-webkit-keyframes resultAnimateB{
+    from {
+        transform: translateZ(1rem) scale(0.9);
+   }
+    to {
+        transform: translateZ() scale(1);
+   }
+}
+@keyframes resultB {
+    from {
+        transform: translateZ(0.2rem) scale(0.9);
+   }
+    to {
+        transform: translateZ() scale(1);
+   }
+}
+

@@ -1,0 +1,82 @@
+.start-bg{
+    overflow: hidden;
+    position: relative;
+    background: url('../img/start/start_bg.png') no-repeat;
+    background-size:100% 100%;
+    width: 100%;
+    height:100%;
+}
+.pt{
+    position: absolute;
+    top: 1.2rem;
+    text-align: center;
+}
+.logo{
+    width: 3.92rem;
+    height: 0.8666666666666667rem;
+    display: inline-block;
+    margin-bottom:0.13333333333333333rem;
+}
+.money{
+    width: 10rem;
+    height: 8.826666666666666rem;
+    background: url('../img/start/money.png') no-repeat;
+    background-size:100% 100%;
+    animation: myfirst2 5s 1;
+}
+.start1_bg{
+    height: 8.04rem;
+    width: 10rem;
+    background: url('../img/start/start1_bg.png') no-repeat;
+    text-align: center;
+    background-size:100% 100%;
+}
+.sjbx{
+    display: inline-block;
+    width: 7.666666666666667rem;
+    margin: 0.3466666666666667rem 0rem 0 -0.7466666666666667rem;
+}
+.sj{
+    width: 3.1733333333333333rem;
+    height: 1.56rem;
+}
+.b{
+    width: 1.56rem;
+    height: 1.56rem;
+}
+.x{
+    width: 1.56rem;
+    height: 1.56rem;
+}
+.howMoney_content{
+    text-align: center;
+    position: absolute;
+    bottom: 1.7333333333333334rem;
+}
+.howMoney{
+    width: 6.48rem;
+    height: 0.6533333333333333rem;
+    display: inline-block;
+    margin:0 auto 0.26666666666666666rem;
+}
+.start_button{
+    width: 6.826666666666667rem;
+    height: 1.52rem;
+    animation: myfirst 0.5s infinite;
+}
+@keyframes myfirst {
+    from {
+        transform: translateZ() scale(1);
+   }
+    to {
+        transform: translateZ(0.1rem) scale(1.1);
+   }
+}
+@keyframes myfirst2 {
+    from {
+        transform: translateZ(0rem) scale(0);
+   }
+    to {
+        transform: translateZ(0.13333333333333333rem) scale(1);
+   }
+}
